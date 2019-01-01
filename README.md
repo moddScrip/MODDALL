@@ -8,3 +8,4 @@ Installation:
            Actually you are ready to start this tool by going into the folder where u installed the File and write ./MODDALL.sh
             
            A quick tipp: you can replace the Code into the bed.pl script so you can run MODDALL just by typing bed
+           COPYRIGTH MARCO W.
