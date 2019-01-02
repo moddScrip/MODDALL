@@ -69,7 +69,7 @@ if test $EINGABE = "1"
      echo 'YP   YP   Y88P     YP    Y888888P    YP    Y888888 '
      sleep 3
      cd Desktop
-     ./bed.pl
+     ./MODDALL.sh
      
 fi 
    if test $EINGABEZ = "2"
@@ -85,7 +85,7 @@ fi
      echo '  Y88P   YP      YP      '
      sleep 3
      cd Desktop
-     ./bed.pl
+     ./MODDALL.sh
 fi
    if test $EINGABEZ = "3"
      then
@@ -242,7 +242,7 @@ fi
 if test $EINGABE = "9"
     then 
     wireshark
-    ./bed.pl
+    ./MODDALL.sh
 fi
 
 if test $EINGABE = "6"
@@ -294,7 +294,7 @@ if test $EINGABE = "7"
     read DMAIN
     if test $DMAIN = "2"
      then 
-     ./bed.pl
+     ./MODDALL.sh
 fi
    if test $DMAIN = "1"
     then 
