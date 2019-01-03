@@ -1,4 +1,5 @@
 #!/bin/bash 
+chmod +x AIRODUMP.sh
 clear
 echo "$(tput setaf 6) 
     __  ___  ____    ____    ____    ___      __      __
