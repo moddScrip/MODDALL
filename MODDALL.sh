@@ -1,14 +1,5 @@
 #!/bin/bash 
-echo"
-  ___  _____  _____  _____  _   __ _____   ___   _____  _   __ 
- / _ \|_   _|| ___ \/  __ \| | / /| ___ \ / _ \ /  __ \| | / / 
-/ /_\ \ | |  | |_/ /| /  \/| |/ / | |_/ // /_\ \| /  \/| |/ /  
-|  _  | | |  |    / | |    |    \ |    / |  _  || |    |    \  
-| | | |_| |_ | |\ \ | \__/\| |\  \| |\ \ | | | || \__/\| |\  \ 
-\_| |_/\___/ \_| \_| \____/\_| \_/\_| \_|\_| |_/ \____/\_| \_/ 
-"
- 
-clear 
+clear
 echo "$(tput setaf 6) 
     __  ___  ____    ____    ____    ___      __      __
    /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
@@ -18,7 +9,7 @@ echo "$(tput setaf 6)
 
 " 
 RED='\033[31m'
-echo "$(tput setaf 2) Version 1.6"
+echo "$(tput setaf 2) Version 1.9"
 NC='\033[0m'
 echo "$(tput setaf 3) Select from menu:"
 echo''
@@ -32,13 +23,6 @@ echo    '        7) Deauthing Attacks '
 echo    '        8) Sniffing/MITM Attacks ' 
 echo    '        9) Data Sniffer '
 echo    '       10) Passwort cracking '
-
-
-
-
-
-
-
 
 
 echo 
@@ -149,10 +133,10 @@ fi
       ./MODDALL.sh
 fi
 fi
-if test $EINGABE = "2"   
-  then 
-   clear
-   echo "
+   if test $EINGABE = "2"   
+    then 
+    clear
+    echo "
     __  ___  ____    ____    ____    ___      __      __
    /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
   / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
@@ -185,32 +169,32 @@ fi
     
 fi
 
-if test $EINGABE = "3"   
-  then 
-   wifite  
+   if test $EINGABE = "3"   
+    then 
+    wifite  
 fi
 
-if test $EINGABE = "help"   
-  then 
-   clear
-   echo Why the fuck would you need help here?
-   echo Please go and delete your Sys 32
+   if test $EINGABE = "help"   
+    then 
+    clear
+    echo Why the fuck would you need help here?
+    echo Please go and delete your Sys 32
 fi
 
-if test $EINGABE = "4"   
-  then 
-   setoolkit 
+   if test $EINGABE = "4"   
+    then 
+    setoolkit 
 fi
 
-if test $EINGABE = "5"   
-  then 
+   if test $EINGABE = "5"   
+   then 
    msfconsole
 fi
 
-if test $EINGABE = "8"
-  then 
-  clear
-  echo "
+   if test $EINGABE = "8"
+    then 
+    clear
+    echo "
     __  ___  ____    ____    ____    ___      __      __
    /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
   / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
@@ -224,43 +208,40 @@ if test $EINGABE = "8"
    read $EINGABENSEEE
    
    if test $EINGABENSEEE ="2"
-     then
-     echo 'Please select an Userinterface!'
-     echo 'Wireless...usally wlan0'
-     echo 'Wired......usallt eth0'
-     echo
-     echo 'Do you want to check your interfaces?'
-     echo '1) Yes'
-     echo '2) No'
-
-     read INTERFACECHECK
+    then
+    echo 'Please select an Userinterface!'
+    echo 'Wireless...usally wlan0'
+    echo 'Wired......usallt eth0'
+    echo     echo 'Do you want to check your interfaces?'
+    echo '1) Yes'
+    echo '2) No'
+    read INTERFACECHECK
 fi
-     if test $INTERFACECHECK = "1"
-       then 
-        ifconfig
-        echo 
-        echo 
-        echo 'So! Which one do you want to use?'
-
-        read USERINTERFACE 
-        ettercap -i $USERINTERFACE
+   if test $INTERFACECHECK = "1"
+    then 
+    ifconfig
+    echo 
+    echo 
+    echo 'So! Which one do you want to use?'
+    read USERINTERFACE 
+    ettercap -i $USERINTERFACE
 fi
 
 fi
 
-if test $EINGABE = "9"
+   if test $EINGABE = "9"
     then 
     wireshark
     ./MODDALL.sh
 fi
 
-if test $EINGABE = "6"
+   if test $EINGABE = "6"
     then 
     xterm&
     
 fi
 
-if test $EINGABE = "7"
+   if test $EINGABE = "7"
     then 
     echo "
     __  ___  ____    ____    ____    ___      __      __
@@ -270,7 +251,7 @@ if test $EINGABE = "7"
 /_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
 
 "
-    airmon-ng start wlan0
+   airmon-ng start wlan0
     clear
     echo "$(tput setaf 6)
     __  ___  ____    ____    ____    ___      __      __
@@ -289,14 +270,6 @@ if test $EINGABE = "7"
     if test $SCANNING = "2"
     then 
     clear
-    echo You need to Airodump the Victims Wifi
-    echo Do that by starting the MODDALL script in a new tab and go to Airodump
-    echo 
-    echo 'Now choose Scan ACPs' 
-    echo 
-    echo 'Grab the BSSID and remember the ACPs Channel (ch)'
-    echo 
-    echo Again go into Airodump and choose Target scan an ACP
     echo 
     echo ' 1) Airodump the victim'
     echo ' 2) Back to main'
@@ -307,14 +280,34 @@ if test $EINGABE = "7"
 fi
    if test $DMAIN = "1"
     then 
-    xterm -e airodump-ng wlan0mon &
-    echo Put in the BSSID
+    gnome-terminal --geometry 100x20+0+999999 -e ./AIRODUMP.sh
+    clear
+    echo "$(tput setaf 6)
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+"
+    echo
+    echo "$(tput setaf 3)Put in the BSSID"
     read BSSIDXTDE
+    clear
+    echo "$(tput setaf 6)
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+"
+    echo
     echo "WAIT! BEFORE YOU PUT IN THE CHANNEL CLOSE THE SMALL WINDOW WICH OPENED A FEW MOMENTS AGO!"
-    echo Put in the CHANNEL
+    echo "$(tput setaf 3)Put in the CHANNEL"
     read CHANNELXTDE
     xterm -e airodump-ng -c $CHANNELXTDE --bssid $BSSIDXTDE wlan0mon &
-    echo Now that you are airodumping the victim you can also deauth him
+    echo Now that you are airodumping the victim you can also deauth it
     echo ATTACK STARTS!
     sleep 5
        
@@ -338,13 +331,12 @@ fi
 fi
     
 fi
-    if test $SCANNING = "1"
-      then 
-      echo Put in the BSSID
-      read BSSIDDE
-      
-      xterm -e aireplay-ng --deauth 0 -a $BSSIDDE wlan0mon &
-      echo "
+   if test $SCANNING = "1"
+    then 
+    echo Put in the BSSID
+    read BSSIDDE 
+    xterm -e aireplay-ng --deauth 0 -a $BSSIDDE wlan0mon &
+    echo "
 
   _____    ______              _    _   _______   _    _   _____   _   _    _____ 
  |  __ \  |  ____|     /\     | |  | | |__   __| | |  | | |_   _| | \ | |  / ____|
@@ -359,7 +351,7 @@ fi
 fi
 fi
 
-if test $EINGABE = "10"
+   if test $EINGABE = "10"
     then 
     airmon-ng start wlan0
     clear
@@ -477,6 +469,20 @@ fi
      ./MODDALL.sh
      
      
+fi
+   else
+   clear
+   echo This is not a valid value!
+   echo MODDALL will start again
+   echo Press something
+   read DASKLEINEEINMALEINS
+    echo 3
+    sleep 0.25
+    echo 2
+    sleep 0.25
+    echo 1
+    sleep 0.25
+   ./MODDALL.sh
 fi
 fi
     
