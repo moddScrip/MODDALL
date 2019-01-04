@@ -11,7 +11,7 @@ echo "$(tput setaf 6)
 
 " 
 RED='\033[31m'
-echo "$(tput setaf 2) Version 1.9"
+echo "$(tput setaf 2) Version 2.1"
 NC='\033[0m'
 echo "$(tput setaf 3) Select from menu:"
 echo''
