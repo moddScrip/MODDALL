@@ -379,7 +379,7 @@ fi
 \_| |_/\___/ \_| \_| \____/\_| \_/\_| \_|\_| |_/ \____/\_| \_/ 
 " 
      echo From
-     echo Example 5 to 9
+     echo Example 5 
      read WORTERUSW
      clear
      echo "
@@ -391,7 +391,7 @@ fi
 \_| |_/\___/ \_| \_| \____/\_| \_/\_| \_|\_| |_/ \____/\_| \_/ 
 " 
      echo To
-     echo Example 5 to 9
+     echo Example 9
      read WORTERUSWZ
      clear
      echo "
