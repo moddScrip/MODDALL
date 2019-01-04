@@ -1,5 +1,6 @@
-#!/bin/bash 
+ #!/bin/bash 
 chmod +x AIRODUMP.sh
+chmod +x CAPTUREHANDESHAKE.sh
 clear
 echo "$(tput setaf 6) 
     __  ___  ____    ____    ____    ___      __      __
@@ -120,17 +121,7 @@ fi
     if test $EINGABEZ = "5"
       then 
       clear
-      xterm -e airodump-ng wlan0mon &
-      echo Put in the Wifi BSSID
-      read WIFIBSSID
-      echo Put in the Wifi CHANNEL
-      read WIFICHANNEL
-      echo Put in the Interface
-      read WIFIHACKINTERFACE
-      echo The Cap File will be saved to Desktop
-      sleep 5
-      echo When the Airodump starts you can start a Deauth Attack to fast up the Procces
-      xterm -e airodump-ng -c $WIFICHANNEL --bssid $WIFIBSSID -w /root/Desktop/ $WIFIHACKINTERFACE &
+      gnome-terminal --geometry 100x20+0+999999 -e ./CAPTUREHANDESHAKE.sh
       ./MODDALL.sh
 fi
 fi
@@ -178,10 +169,13 @@ fi
    if test $EINGABE = "help"   
     then 
     clear
+    
+   elif test $EINGABE = "h"
+    then 
+    clear 
     echo Why the fuck would you need help here?
     echo Please go and delete your Sys 32
 fi
-
    if test $EINGABE = "4"   
     then 
     setoolkit 
@@ -213,7 +207,7 @@ fi
     echo 'Please select an Userinterface!'
     echo 'Wireless...usally wlan0'
     echo 'Wired......usallt eth0'
-    echo     echo 'Do you want to check your interfaces?'
+    echo 'Do you want to check your interfaces?'
     echo '1) Yes'
     echo '2) No'
     read INTERFACECHECK
@@ -368,6 +362,11 @@ fi
     echo '1) Yes '
     echo '2) No'
     read DPAE
+    if test $DPAE = "2"
+     then 
+     echo LEARN IT
+     sleep 10d
+fi
     if test $DPAE = "1"
      then
      clear
